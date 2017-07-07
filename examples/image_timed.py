@@ -32,7 +32,7 @@ SPEED_HZ = 4000000
 
 # Raspberry Pi configuration.
 DC = 24
-RST = 25
+RST = 22
 SPI_PORT = 0
 SPI_DEVICE = 0
 
@@ -43,7 +43,7 @@ SPI_DEVICE = 0
 #SPI_DEVICE = 0
 
 # Create TFT LCD display class.
-disp = TFT.ST7735(
+disp = TFT.KMR18(
     DC,
     rst=RST,
     spi=SPI.SpiDev(
@@ -59,7 +59,7 @@ print('Loading image...')
 image = Image.open('cat.jpg')
 
 # Resize the image and rotate it so matches the display.
-image = image.rotate(90).resize((WIDTH, HEIGHT))
+image = image.rotate(270).resize((WIDTH, HEIGHT))
 
 print('Press Ctrl-C to exit')
 while(True):

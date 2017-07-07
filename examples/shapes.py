@@ -22,7 +22,7 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 
-import KMR-1.8 as TFT
+import KMR18 as TFT
 import Adafruit_GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
 
@@ -45,7 +45,7 @@ SPI_DEVICE = 0
 # SPI_DEVICE = 0
 
 # Create TFT LCD display class.
-disp = TFT.ST7735(
+disp = TFT.KMR18(
     DC,
     rst=RST,
     spi=SPI.SpiDev(

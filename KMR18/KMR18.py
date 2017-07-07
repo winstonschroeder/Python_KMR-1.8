@@ -34,18 +34,18 @@ SPI_CLOCK_HZ = 4000000 # 4 MHz
 
 
 # Constants for interacting with display registers.
-KMR-1.8_TFTWIDTH    = 128
-KMR-1.8_TFTHEIGHT   = 160
+KMR18_TFTWIDTH    = 128
+KMR18_TFTHEIGHT   = 160
 
-KMR-1.8_NOP         = 0x00
-KMR-1.8_SWRESET     = 0x01
-KMR-1.8_RDDID       = 0x04
-KMR-1.8_RDDST       = 0x09
+KMR18_NOP         = 0x00
+KMR18_SWRESET     = 0x01
+KMR18_RDDID       = 0x04
+KMR18_RDDST       = 0x09
 
-KMR-1.8_SLPIN       = 0x10
-KMR-1.8_SLPOUT      = 0x11
-KMR-1.8_PTLON       = 0x12
-KMR-1.8_NORON       = 0x13
+KMR18_SLPIN       = 0x10
+KMR18_SLPOUT      = 0x11
+KMR18_PTLON       = 0x12
+KMR18_NORON       = 0x13
 
 # ILI9341_RDMODE      = 0x0A
 # ILI9341_RDMADCTL    = 0x0B
@@ -53,57 +53,57 @@ KMR-1.8_NORON       = 0x13
 # ILI9341_RDIMGFMT    = 0x0A
 # ILI9341_RDSELFDIAG  = 0x0F
 
-KMR-1.8_INVOFF      = 0x20
-KMR-1.8_INVON       = 0x21
+KMR18_INVOFF      = 0x20
+KMR18_INVON       = 0x21
 # ILI9341_GAMMASET    = 0x26
-KMR-1.8_DISPOFF     = 0x28
-KMR-1.8_DISPON      = 0x29
+KMR18_DISPOFF     = 0x28
+KMR18_DISPON      = 0x29
 
-KMR-1.8_CASET       = 0x2A
-KMR-1.8_RASET       = 0x2B
-KMR-1.8_RAMWR       = 0x2C
-KMR-1.8_RAMRD       = 0x2E
+KMR18_CASET       = 0x2A
+KMR18_RASET       = 0x2B
+KMR18_RAMWR       = 0x2C
+KMR18_RAMRD       = 0x2E
 
-KMR-1.8_PTLAR       = 0x30
-KMR-1.8_MADCTL      = 0x36
-# KMR-1.8_PIXFMT      = 0x3A
-KMR-1.8_COLMOD       = 0x3A
+KMR18_PTLAR       = 0x30
+KMR18_MADCTL      = 0x36
+# KMR18_PIXFMT      = 0x3A
+KMR18_COLMOD       = 0x3A
 
-KMR-1.8_FRMCTR1     = 0xB1
-KMR-1.8_FRMCTR2     = 0xB2
-KMR-1.8_FRMCTR3     = 0xB3
-KMR-1.8_INVCTR      = 0xB4
+KMR18_FRMCTR1     = 0xB1
+KMR18_FRMCTR2     = 0xB2
+KMR18_FRMCTR3     = 0xB3
+KMR18_INVCTR      = 0xB4
 # ILI9341_DFUNCTR     = 0xB6
-KMR-1.8_DISSET5      = 0xB6
+KMR18_DISSET5      = 0xB6
 
 
-KMR-1.8_PWCTR1      = 0xC0
-KMR-1.8_PWCTR2      = 0xC1
-KMR-1.8_PWCTR3      = 0xC2
-KMR-1.8_PWCTR4      = 0xC3
-KMR-1.8_PWCTR5      = 0xC4
-KMR-1.8_VMCTR1      = 0xC5
+KMR18_PWCTR1      = 0xC0
+KMR18_PWCTR2      = 0xC1
+KMR18_PWCTR3      = 0xC2
+KMR18_PWCTR4      = 0xC3
+KMR18_PWCTR5      = 0xC4
+KMR18_VMCTR1      = 0xC5
 # ILI9341_VMCTR2      = 0xC7
 
-KMR-1.8_RDID1       = 0xDA
-KMR-1.8_RDID2       = 0xDB
-KMR-1.8_RDID3       = 0xDC
-KMR-1.8_RDID4       = 0xDD
+KMR18_RDID1       = 0xDA
+KMR18_RDID2       = 0xDB
+KMR18_RDID3       = 0xDC
+KMR18_RDID4       = 0xDD
 
-KMR-1.8_GMCTRP1     = 0xE0
-KMR-1.8_GMCTRN1     = 0xE1
+KMR18_GMCTRP1     = 0xE0
+KMR18_GMCTRN1     = 0xE1
 
-KMR-1.8_PWCTR6      = 0xFC
+KMR18_PWCTR6      = 0xFC
 
 # Colours for convenience
-KMR-1.8_BLACK       = 0x0000 # 0b 00000 000000 00000
-KMR-1.8_BLUE        = 0x001F # 0b 00000 000000 11111
-KMR-1.8_GREEN       = 0x07E0 # 0b 00000 111111 00000
-KMR-1.8_RED         = 0xF800 # 0b 11111 000000 00000
-KMR-1.8_CYAN        = 0x07FF # 0b 00000 111111 11111
-KMR-1.8_MAGENTA     = 0xF81F # 0b 11111 000000 11111
-KMR-1.8_YELLOW      = 0xFFE0 # 0b 11111 111111 00000
-KMR-1.8_WHITE       = 0xFFFF # 0b 11111 111111 11111
+KMR18_BLACK       = 0x0000 # 0b 00000 000000 00000
+KMR18_BLUE        = 0x001F # 0b 00000 000000 11111
+KMR18_GREEN       = 0x07E0 # 0b 00000 111111 00000
+KMR18_RED         = 0xF800 # 0b 11111 000000 00000
+KMR18_CYAN        = 0x07FF # 0b 00000 111111 11111
+KMR18_MAGENTA     = 0xF81F # 0b 11111 000000 11111
+KMR18_YELLOW      = 0xFFE0 # 0b 11111 111111 00000
+KMR18_WHITE       = 0xFFFF # 0b 11111 111111 11111
 
 
 def color565(r, g, b):
@@ -118,13 +118,14 @@ def image_to_data(image):
     # Keith (https://www.blogger.com/profile/02555547344016007163)
     pb = np.array(image.convert('RGB')).astype('uint16')
     color = ((pb[:,:,0] & 0xF8) << 8) | ((pb[:,:,1] & 0xFC) << 3) | (pb[:,:,2] >> 3)
+    #color =  (pb[:,:,2] << 8) | ((pb[:,:,1] & 0xFC) << 3) | ((pb[:,:,0] & 0xF8) >> 3)
     return np.dstack(((color >> 8) & 0xFF, color & 0xFF)).flatten().tolist()
 
-class KMR-1.8(object):
-    """Representation of an KMR-1.8 TFT LCD."""
+class KMR18(object):
+    """Representation of an KMR18 TFT LCD."""
 
-    def __init__(self, dc, spi, rst=None, gpio=None, width=KMR-1.8_TFTWIDTH,
-        height=KMR-1.8_TFTHEIGHT):
+    def __init__(self, dc, spi, rst=None, gpio=None, width=KMR18_TFTWIDTH,
+        height=KMR18_TFTHEIGHT):
         """Create an instance of the display using SPI communication.  Must
         provide the GPIO pin number for the D/C pin and the SPI driver.  Can
         optionally provide the GPIO pin number for the reset pin as the rst
@@ -183,83 +184,128 @@ class KMR-1.8(object):
             time.sleep(0.500)
             self._gpio.set_high(self._rst)
             time.sleep(0.500)
+            """
+            self._gpio.set_high(self._rst)
+            time.sleep(0.500)
+            self._gpio.set_low(self._rst)
+            time.sleep(0.500)
+            self._gpio.set_high(self._rst)
+            time.sleep(0.500)
+            """
 
     def _init(self):
         # Initialize the display.  Broken out as a separate function so it can
         # be overridden by other displays in the future.
-        
-        self.command(KMR-1.8_SWRESET) # Software reset
+
+        self.command(KMR18_SWRESET) # Software reset
         time.sleep(0.150) # delay 150 ms
-        
-        self.command(KMR-1.8_SLPOUT) # Out of sleep mode
+
+        self.command(KMR18_SLPOUT) # Out of sleep mode
         time.sleep(0.500) # delay 500 ms
-        
-        self.command(KMR-1.8_FRMCTR1) # Frame rate ctrl - normal mode
+
+        """
+        referring to http://www.displayfuture.com/Display/datasheet/controller/ST7735.pdf
+        framerates should be set to
+        -Set the frame frequency of the full colors normal mode.
+        - Frame rate=fosc/((RTNA + 20) x (LINE + FPA + BPA))
+        Description
+        - 1 < FPA(front porch) + BPA(back porch) ; Back porch ≠0
+        Note: fosc = 333kHz
+
+        Example 1:
+        Frame rate = 60Hz
+        fosc = 333kHz
+        num_lines = 128
+        LINE = 160
+        FPA = 0
+        --> RTN <= 128/60Hz = 2,13s
+        --> FPA + BPA = (fosc / Frame rate / (RTN + 20)) - LINE
+        --> BPA = (333kHz / 60Hz / (2 + 20)) - 160 = 92
+
+        Example 2:
+        Frame rate = 100Hz
+        fosc = 333kHz
+        num_lines = 128
+        LINE = 160
+        FPA = 0
+        --> RTN <= 128/100Hz = 1,28
+        --> FPA + BPA = (fosc / Frame rate / (RTN + 20)) - LINE
+        --> BPA = (333kHz / 100Hz / (1 + 20)) - 160 = -1,4
+        """
+        # Rate = fosc/(1x2+40) * (LINE+2C+2D)
+        self.command(KMR18_FRMCTR1) # Frame rate ctrl - normal mode
+        """
+        self.data(0x01) # RTNA = 0x01 = b0001 = 1 = 1-line period (RTN)
+        self.data(0x00) # FPA = 0x2c = b101100 = 45 = Front Porch (FP)
+        self.data(0x0D) # BPA = 0x2d = b101101 = 46 = Back Porch (BP)
+        """
+        self.data(0x0f) # RTNA = 0x01 = b0001 = 1 = 1-line period (RTN)
+        self.data(0x2f) # FPA = 0x2c = b101100 = 45 = Front Porch (FP)
+        self.data(0x2f) # BPA = 0x2d = b101101 = 46 = Back Porch (BP)
+
+        self.command(KMR18_FRMCTR2) # Frame rate ctrl - idle mode
         self.data(0x01) # Rate = fosc/(1x2+40) * (LINE+2C+2D)
         self.data(0x2C)
         self.data(0x2D)
-        
-        self.command(KMR-1.8_FRMCTR2) # Frame rate ctrl - idle mode
-        self.data(0x01) # Rate = fosc/(1x2+40) * (LINE+2C+2D)
-        self.data(0x2C)
-        self.data(0x2D)
-        
-        self.command(KMR-1.8_FRMCTR3) # Frame rate ctrl - partial mode
+
+        self.command(KMR18_FRMCTR3) # Frame rate ctrl - partial mode
         self.data(0x01) # Dot inversion mode
         self.data(0x2C)
         self.data(0x2D)
         self.data(0x01) # Line inversion mode
         self.data(0x2C)
         self.data(0x2D)
-        
-        self.command(KMR-1.8_INVCTR) # Display inversion ctrl
+
+
+        self.command(KMR18_INVCTR) # Display inversion ctrl
         self.data(0x07) # No inversion
-        
-        self.command(KMR-1.8_PWCTR1) # Power control
+
+        self.command(KMR18_PWCTR1) # Power control
         self.data(0xA2)
         self.data(0x02) # -4.6V
         self.data(0x84) # auto mode
-        
-        self.command(KMR-1.8_PWCTR2) # Power control
+
+        self.command(KMR18_PWCTR2) # Power control
         self.data(0x0A) # Opamp current small
         self.data(0x00) # Boost frequency
-        
-        self.command(KMR-1.8_PWCTR4) # Power control
+
+        self.command(KMR18_PWCTR4) # Power control
         self.data(0x8A) # BCLK/2, Opamp current small & Medium low
         self.data(0x2A)
-        
-        self.command(KMR-1.8_PWCTR5) # Power control
+
+        self.command(KMR18_PWCTR5) # Power control
         self.data(0x8A)
         self.data(0xEE)
-        
-        self.command(KMR-1.8_VMCTR1) # Power control
+
+        self.command(KMR18_VMCTR1) # Power control
         self.data(0x0E)
-        
-        self.command(KMR-1.8_INVOFF) # Don't invert display
-        
-        self.command(KMR-1.8_MADCTL) # Memory access control (directions)
+
+        self.command(KMR18_INVOFF) # Don't invert display
+        #self.command(KMR18_INVON) # Don't invert display
+
+        self.command(KMR18_MADCTL) # Memory access control (directions)
         self.data(0xC8) # row addr/col addr, bottom to top refresh
-        
-        self.command(KMR-1.8_COLMOD) # set color mode
+
+        self.command(KMR18_COLMOD) # set color mode
         self.data(0x05) # 16-bit color
-        
+
         #
-        
-        self.command(KMR-1.8_CASET) # Column addr set
+
+        self.command(KMR18_CASET) # Column addr set
         self.data(0x00) # XSTART = 0
         self.data(0x00)
         self.data(0x00) # XEND = 127
         self.data(0x7F)
-        
-        self.command(KMR-1.8_RASET) # Row addr set
+
+        self.command(KMR18_RASET) # Row addr set
         self.data(0x00) # XSTART = 0
         self.data(0x00)
         self.data(0x00) # XEND = 159
         self.data(0x9F)
-        
+
         #
-        
-        self.command(KMR-1.8_GMCTRP1) # Set Gamma
+
+        self.command(KMR18_GMCTRP1) # Set Gamma
         self.data(0x02)
         self.data(0x1c)
         self.data(0x07)
@@ -276,8 +322,8 @@ class KMR-1.8(object):
         self.data(0x01)
         self.data(0x03)
         self.data(0x10)
-        
-        self.command(KMR-1.8_GMCTRN1) # Set Gamma
+
+        self.command(KMR18_GMCTRN1) # Set Gamma
         self.data(0x03)
         self.data(0x1d)
         self.data(0x07)
@@ -294,11 +340,11 @@ class KMR-1.8(object):
         self.data(0x00)
         self.data(0x02)
         self.data(0x10)
-        
-        self.command(KMR-1.8_NORON) # Normal display on
+
+        self.command(KMR18_NORON) # Normal display on
         time.sleep(0.10) # 10 ms
-        
-        self.command(KMR-1.8_DISPON) # Display on
+
+        self.command(KMR18_DISPON) # Display on
         time.sleep(0.100) # 100 ms
 
     def begin(self):
@@ -319,17 +365,17 @@ class KMR-1.8(object):
             x1 = self.width-1
         if y1 is None:
             y1 = self.height-1
-        self.command(KMR-1.8_CASET)        # Column addr set
+        self.command(KMR18_CASET)        # Column addr set
         self.data(x0 >> 8)
         self.data(x0)                    # XSTART
         self.data(x1 >> 8)
         self.data(x1)                    # XEND
-        self.command(KMR-1.8_RASET)        # Row addr set
+        self.command(KMR18_RASET)        # Row addr set
         self.data(y0 >> 8)
         self.data(y0)                    # YSTART
         self.data(y1 >> 8)
         self.data(y1)                    # YEND
-        self.command(KMR-1.8_RAMWR)        # write to RAM
+        self.command(KMR18_RAMWR)        # write to RAM
 
     def display(self, image=None):
         """Write the display buffer or provided image to the hardware.  If no
@@ -338,8 +384,12 @@ class KMR-1.8(object):
         same dimensions as the display hardware.
         """
         # By default write the internal buffer to the display.
+
+        """ TODO: Bugfix, when ImageDraw is used for shapes, color RGB color channels R<->S are swapped """
         if image is None:
             image = self.buffer
+            r, g, b = image.split()
+            image = Image.merge('RGB', (b,g,r))
         # Set address bounds to entire display.
         self.set_window()
         # Convert image to array of 16bit 565 RGB data bytes.
@@ -357,4 +407,11 @@ class KMR-1.8(object):
 
     def draw(self):
         """Return a PIL ImageDraw instance for 2D drawing on the image buffer."""
+        """TODO: Fix RGB Assignment (R-B Swap Neccessary)"""
+        """
+        im_rgb = ImageDraw.Draw(self.buffer)
+        r, g, b = im_rgb.split()
+        im_rgb = Image.merge('RGB', (b, g, r))
+        return im_rgb
+        """
         return ImageDraw.Draw(self.buffer)

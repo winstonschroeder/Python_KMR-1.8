@@ -19,6 +19,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
 
 import KMR18 as TFT
 import Adafruit_GPIO as GPIO
@@ -27,12 +29,12 @@ import Adafruit_GPIO.SPI as SPI
 
 WIDTH = 128
 HEIGHT = 160
-SPEED_HZ = 40000000
+SPEED_HZ = 4000000
 
 
 # Raspberry Pi configuration.
 DC = 24
-RST = 22
+RST = 25
 SPI_PORT = 0
 SPI_DEVICE = 0
 
@@ -54,14 +56,12 @@ disp = TFT.KMR18(
 # Initialize display.
 disp.begin()
 
+# Clear the display to a red background.
+# Can pass any tuple of red, green, blue values (from 0 to 255 each).
 disp.clear()
-# Load an image.
-print('Loading image...')
-image = Image.open('cat.jpg')
 
-# Resize the image and rotate it so matches the display.
-image = image.rotate(270).resize((WIDTH, HEIGHT))
+draw = disp.draw()
 
-# Draw the image on the display hardware.
-print('Drawing image')
-disp.display(image)
+draw.rectangle((0, 0, 127, 159), outline=(255,255,255), fill=(0,0,255))
+
+disp.display()
