@@ -20,7 +20,7 @@
 # THE SOFTWARE.
 from PIL import Image
 import time
-import ST7735 as TFT
+import KMR18 as TFT
 import Adafruit_GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
 

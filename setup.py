@@ -25,7 +25,7 @@ classifiers = ['Development Status :: 4 - Beta',
                'Topic :: Software Development',
                'Topic :: System :: Hardware']
 
-setup(name              = 'KMR-1.8',
+setup(name              = 'KMR18',
       version           = '0.0.1',
       description       = 'Library to control an KMR-1.8 TFT LCD display based on work by cskau.',
       license           = 'MIT',
